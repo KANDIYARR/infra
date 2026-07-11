@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 100" role="img" aria-labelledby="title">
+<title id="title">Infra Solutions Ltd</title>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop stop-color="#78d62b"/><stop offset=".52" stop-color="#20b45a"/><stop offset="1" stop-color="#0879d1"/></linearGradient></defs>
+<g transform="translate(7 8)">
+<path d="M39 0 78 22v44L39 88 0 66V22z" fill="none" stroke="url(#g)" stroke-width="8"/>
+<path d="m18 30 21-12 21 12-21 12zM18 51l21 12 21-12" fill="none" stroke="white" stroke-width="6" stroke-linejoin="round"/>
+</g>
+<text x="110" y="43" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="800" letter-spacing="5">INFRA</text>
+<text x="110" y="73" fill="#d7e6f4" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="6">SOLUTIONS LTD</text>
+<text x="111" y="94" fill="#9cc0d8" font-family="Arial,Helvetica,sans-serif" font-size="10">Powering Tanzania. Securing Tomorrow.</text>
+</svg>

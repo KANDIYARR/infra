@@ -1,0 +1,55 @@
+
+:root{
+  --navy:#031a33;--navy-2:#06284a;--blue:#0758b7;--green:#20b45b;--lime:#76d22a;--gold:#fcd116;
+  --ink:#0b1f38;--muted:#52657a;--surface:#f5f8fb;--line:#dce6ef;--white:#fff;--container:1180px;
+  --shadow:0 18px 50px rgba(3,26,51,.12)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}button{font:inherit}.container{width:min(calc(100% - 40px),var(--container));margin:auto}
+.section{padding:34px 0}.title{text-align:center;font-size:1.5rem;line-height:1.15;letter-spacing:-.025em;margin:0 0 10px}.title:after{content:"";display:block;width:42px;height:3px;margin:9px auto 0;background:linear-gradient(90deg,var(--lime),var(--green));border-radius:3px}.subtitle{max-width:720px;margin:0 auto;color:var(--muted);text-align:center;line-height:1.7}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 24px;border-radius:5px;font-size:.84rem;font-weight:800;border:1px solid transparent;transition:.25s}.btn:hover{transform:translateY(-3px)}
+.btn-primary{color:#fff;background:linear-gradient(135deg,var(--lime),var(--green));box-shadow:0 14px 35px rgba(32,180,91,.28)}.btn-outline{color:#fff;border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.04);backdrop-filter:blur(10px)}
+.site-header{position:fixed;inset:0 0 auto;z-index:60;transition:.3s;background:linear-gradient(to bottom,rgba(3,26,51,.92),transparent)}
+.site-header.scrolled{background:rgba(3,26,51,.94);backdrop-filter:blur(16px);box-shadow:0 8px 28px rgba(0,0,0,.2)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{width:190px}.nav-links{display:flex;gap:31px;color:#fff;font-weight:600;font-size:.78rem}.nav-links a{position:relative}.nav-links a:first-child:after{right:0}.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:-13px;height:2px;background:var(--lime);transition:.25s}.nav-links a:hover:after{right:0}
+.nav-actions{display:flex;gap:20px;align-items:center}.nav-actions .btn{min-width:145px}.flag{width:27px;border-radius:2px}.menu-btn{display:none;background:none;border:0;color:#fff;font-size:1.5rem}
+
+.hero{min-height:490px;height:50vw;max-height:600px;position:relative;color:#fff;display:flex;align-items:center;background:var(--navy);overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#031a33 0%,rgba(3,26,51,.97) 40%,rgba(3,26,51,.50) 67%,rgba(3,26,51,.18)),url("../assets/images/hero-data-center-kilimanjaro.jpg") 72% center/cover no-repeat;transform:scale(1.03);animation:heroZoom 16s ease-in-out infinite alternate}
+@keyframes heroZoom{to{transform:scale(1.10) translateX(-1.2%)}}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 26% 47%,rgba(7,88,183,.22),transparent 33%),linear-gradient(to top,rgba(3,26,51,.5),transparent 40%)}
+.hero-inner{position:relative;z-index:2;padding-top:82px}.hero-copy{max-width:550px}.hero h1{font-size:clamp(2.7rem,4.25vw,4rem);line-height:1.05;letter-spacing:-.04em;margin:0 0 14px}.hero h1 span{color:var(--lime)}
+.hero p{font-size:1rem;line-height:1.45;color:#eef5fa;max-width:520px;margin:0}.hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}.hero-actions .btn{min-width:180px}
+.feature-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:28px;max-width:710px}.feature{display:flex;gap:10px;align-items:center;padding:10px 14px 0 0;font-size:.72rem;line-height:1.4;font-weight:700}.feature img{width:32px;height:32px}
+.pattern-bar{position:absolute;left:0;right:0;bottom:0;height:17px;z-index:3;background:url("../assets/icons/tanzania-pattern.svg") center/140px 17px repeat-x}
+
+.process{background:#fff}.process-grid{display:grid;grid-template-columns:repeat(5,1fr) 1.1fr;gap:18px;margin-top:20px;position:relative}.process-grid:before{content:"";position:absolute;left:7%;right:15%;top:43px;border-top:2px dotted #79c888}
+.process-item{text-align:center;position:relative;z-index:1}.orb{width:82px;height:82px;margin:0 auto 10px;border-radius:50%;background:#fff;border:1px solid var(--line);box-shadow:0 7px 20px rgba(3,26,51,.13),0 0 0 6px rgba(32,180,91,.05);display:grid;place-items:center;transition:.35s}.orb img{width:43px}.process-item:hover .orb{transform:translateY(-9px) rotate(3deg);border-color:#a9dbb6;box-shadow:0 18px 40px rgba(32,180,91,.2)}
+.process-item h3{margin:0 0 5px;font-size:.92rem;line-height:1.05}.process-item p{margin:0;color:var(--muted);font-size:.72rem;line-height:1.4}.map-badge{display:flex;align-items:center;justify-content:center;position:relative;z-index:1}.map-badge img{width:180px}
+
+.solutions{background:linear-gradient(180deg,#f8fbfe,#edf5fb);padding-top:0}.solution-shell{background:rgba(232,241,249,.8);border:1px solid #e4edf5;border-radius:10px;padding:16px 18px 20px;box-shadow:0 12px 35px rgba(3,26,51,.07)}
+.solutions .title{font-size:1.25rem}.solutions .title:after{display:none}.solution-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:14px}.solution-card{background:#fff;border-radius:7px;overflow:hidden;box-shadow:0 7px 18px rgba(3,26,51,.07);border:1px solid #e4eaf0;transition:.35s;transform-style:preserve-3d;position:relative}
+.solution-card:after{content:"";position:absolute;bottom:0;left:25%;right:25%;height:2px;background:var(--green)}.solution-card:nth-child(6):after{background:var(--gold)}.solution-card:hover{transform:translateY(-9px);box-shadow:0 22px 45px rgba(3,26,51,.16)}.solution-image{height:112px;width:100%;object-fit:cover}.solution-body{padding:17px 13px 18px}.solution-icon{width:40px;height:40px;margin-top:-38px;margin-bottom:7px;border-radius:50%;background:#fff;padding:8px;box-shadow:0 4px 15px rgba(0,0,0,.15)}.solution-card h3{font-size:.87rem;line-height:1.05;margin:0 0 6px}.solution-card p{font-size:.69rem;line-height:1.4;color:var(--muted);margin:0}
+
+.why{color:#fff;position:relative;background:linear-gradient(90deg,#031a33 0%,#06335e 50%,rgba(3,26,51,.45)),url("../assets/images/dar-es-salaam.jpg") right center/55% 100% no-repeat;overflow:hidden}
+.why:after{content:"";position:absolute;right:-60px;top:-160px;width:360px;height:360px;border-radius:50%;background:conic-gradient(#1eb53a 0 25%,#fcd116 25% 31%,#000 31% 43%,#00a3dd 43% 100%);opacity:.72}
+.why{padding:27px 0}.why-inner{position:relative;z-index:2;max-width:740px;margin-left:max(20px,calc((100% - var(--container))/2))}.why h2{font-size:1.35rem;margin:0 0 20px}.why h2:after{content:"";display:block;width:34px;height:2px;margin-top:8px;background:var(--gold)}.reasons{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.reason{font-size:.72rem}.reason strong{display:block;margin-bottom:7px}.reason p{color:#d0dfeb;line-height:1.45;margin:0}
+
+.stats-partners{display:grid;grid-template-columns:.85fr 1.35fr;min-height:205px}.stats-panel{padding:25px 50px;background:linear-gradient(135deg,#073a73,#031a33);color:#fff}.stats-panel h2,.partner-panel h2{font-size:1.25rem;margin:0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:18px 0}.stat{padding-right:10px;border-right:1px solid rgba(255,255,255,.14)}.stat:last-child{border:0}.stat b{display:block;color:var(--lime);font-size:1.55rem}.stat span{font-size:.67rem;color:#d9e5ef}
+.stats-panel .btn{padding:9px 20px;font-size:.7rem}.partner-panel{padding:25px 42px 0;background:#f7fafd}.partner-panel h2{color:#0758b7}.industry-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:14px}.industry{text-align:center;color:var(--navy);font-size:.68rem}.industry .industry-icon{font-size:1.65rem;color:var(--blue);margin-bottom:6px}
+.partner-logos{display:flex;justify-content:space-around;align-items:center;gap:20px;flex-wrap:wrap;margin:14px -42px 0;padding:16px 28px;border-top:1px solid #dce6ef;background:#fff}.partner-logos img{width:auto;height:34px;max-width:135px;object-fit:contain;filter:saturate(.95);transition:transform .25s ease,filter .25s ease}.partner-logos img.partner-logo-large{height:46px;max-width:165px}.partner-logos img:hover{transform:translateY(-2px);filter:saturate(1.15)}
+
+footer{background:#02172d;color:#c9d7e3;padding:27px 0 13px;position:relative}footer:before{content:"";position:absolute;inset:0;background-image:linear-gradient(30deg,transparent 0 49%,rgba(255,255,255,.025) 50% 51%,transparent 52%);background-size:24px 24px;pointer-events:none}.footer-grid{position:relative;display:grid;grid-template-columns:1.45fr 1fr 1fr 1fr 1.3fr;gap:35px}.footer-logo{width:190px;margin-bottom:13px}.footer-grid h4{color:#fff;margin:0 0 10px;font-size:.78rem}.footer-grid a{display:block;font-size:.67rem;margin:5px 0}.footer-grid p{font-size:.7rem;line-height:1.5}.footer-grid .btn{font-size:.66rem;padding:9px 18px}.copyright{position:relative;border-top:1px solid rgba(255,255,255,.12);margin-top:16px;padding-top:11px;font-size:.64rem;display:flex;justify-content:space-between}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:none}.delay1{transition-delay:.08s}.delay2{transition-delay:.16s}.delay3{transition-delay:.24s}.delay4{transition-delay:.32s}
+.counter{font-variant-numeric:tabular-nums}
+
+@media(max-width:1000px){
+ .nav-links{display:none;position:absolute;top:75px;left:20px;right:20px;flex-direction:column;padding:24px;background:#062745;border-radius:14px}.nav-links.open{display:flex}.menu-btn{display:block}.nav-actions .btn{display:none}
+ .feature-row{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:repeat(2,1fr)}.process-grid:before{display:none}.map-badge{grid-column:1/-1}.why-inner{margin:auto}
+ .solution-grid{grid-template-columns:repeat(3,1fr)}.reasons{grid-template-columns:1fr 1fr}.stats-partners{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+ .container{width:min(calc(100% - 28px),var(--container))}.section{padding:52px 0}.hero{height:auto;min-height:820px}.hero:before{background:linear-gradient(rgba(3,26,51,.86),rgba(3,26,51,.9)),url("../assets/images/hero-data-center-kilimanjaro.jpg") center/cover}.hero h1{font-size:2.9rem}.feature-row{grid-template-columns:1fr}.process-grid,.solution-grid,.reasons,.stats-grid,.industry-grid,.footer-grid{grid-template-columns:1fr}.solution-shell{padding:18px}.solution-image{height:190px}.why{background:linear-gradient(rgba(3,26,51,.91),rgba(3,26,51,.91)),url("../assets/images/dar-es-salaam.jpg") center/cover}.stats-panel,.partner-panel{padding:34px 22px}.partner-logos{margin:20px -22px 0}.copyright{display:block;line-height:1.8}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
