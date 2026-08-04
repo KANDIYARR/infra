@@ -1,0 +1,265 @@
+<!doctype html>
+<!-- ============================================================
+     Project   : Kenmark Solutions Ltd — Website
+     Author    : Vinoth Sakthivel
+     Email     : vinoth@kandiyar.com
+     Version   : 1.0
+     ============================================================ -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="Explore Kenmark Solutions Ltd's data center infrastructure projects and case studies across Tanzania.">
+  <title>Projects & Case Studies — Kenmark Solutions Ltd Tanzania</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html"><img class="logo" src="assets/logo.svg" alt="Kenmark Solutions Ltd"></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About Us</a>
+        <a href="insights.html">Insights</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contact.html">Contact Us →</a>
+        <button class="menu-btn" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> <span>/</span> <span>Projects</span>
+        </div>
+        <h1 class="page-title reveal visible">Featured Projects & Case Studies</h1>
+        <p class="page-subtitle reveal visible delay1">
+          Delivering high-reliability data center infrastructure for Tanzania's leading financial institutions,
+          telecommunications, government agencies, and enterprises.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Portfolio with Interactive Filter -->
+    <section class="py-section bg-light">
+      <div class="container filter-container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (50+)</button>
+          <button class="filter-btn" data-filter="financial">🏦 Financial & Banking</button>
+          <button class="filter-btn" data-filter="telecom">📡 Telecom & Fiber</button>
+          <button class="filter-btn" data-filter="government">🏛️ Government</button>
+          <button class="filter-btn" data-filter="healthcare">✚ Healthcare</button>
+          <button class="filter-btn" data-filter="enterprise">🏢 Enterprise</button>
+        </div>
+
+        <div class="grid-3" style="margin-top:20px;">
+
+          <!-- Case Study 1 -->
+          <article class="project-card reveal visible" data-category="financial">
+            <div style="position:relative;">
+              <img class="project-card-img" src="assets/images/power-systems.jpg" alt="Commercial Bank Data Center">
+              <span class="project-badge">Financial</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Commercial Bank Tier III Primary DC</h3>
+              <p>Turn-key engineering of a 1.2MW dual-bus critical power facility with 2N generator backup, N+1
+                precision cooling, and biometric security in Dar es Salaam.</p>
+              <div class="project-stats-mini">
+                <div><strong>1.2 MW</strong>Capacity</div>
+                <div><strong>48 Racks</strong>IT Footprint</div>
+                <div><strong>99.999%</strong>Uptime SLA</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 2 -->
+          <article class="project-card reveal visible delay1" data-category="telecom">
+            <div style="position:relative;">
+              <img class="project-card-img" src="assets/images/it-infrastructure.jpg" alt="Telecom Edge Nodes">
+              <span class="project-badge">Telecom</span>
+            </div>
+            <div class="project-card-body">
+              <h3>National Telecom Edge POP Nodes</h3>
+              <p>Deployment of 12 modular containerized data center edge nodes across Mwanza, Arusha, Dodoma, and Mbeya
+                for low-latency 5G network distribution.</p>
+              <div class="project-stats-mini">
+                <div><strong>12 Sites</strong>Regional Deployment</div>
+                <div><strong>Lithium</strong>UPS Backup</div>
+                <div><strong>
+                    < 10ms</strong>Network Latency</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 3 -->
+          <article class="project-card reveal visible delay2" data-category="government">
+            <div style="position:relative;">
+              <img class="project-card-img" src="assets/images/dcim-monitoring.jpg" alt="Government Cloud Center">
+              <span class="project-badge">Government</span>
+            </div>
+            <div class="project-card-body">
+              <h3>National Cloud Disaster Recovery Facility</h3>
+              <p>Turn-key design and installation of a 80-rack government cloud recovery center equipped with
+                clean-agent fire suppression and 3D DCIM telemetry.</p>
+              <div class="project-stats-mini">
+                <div><strong>80 Racks</strong>Capacity</div>
+                <div><strong>Tier III</strong>Architectural Standards</div>
+                <div><strong>VESDA</strong>Smoke Detection</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 4 -->
+          <article class="project-card reveal visible delay3" data-category="healthcare">
+            <div style="position:relative;">
+              <img class="project-card-img" src="assets/images/cooling-systems.jpg" alt="Healthcare Hospital Power">
+              <span class="project-badge">Healthcare</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Referral Hospital Critical Power Upgrade</h3>
+              <p>Zero-downtime hot cutover of 400kVA UPS and medical-grade power distribution system for intensive care
+                units and central diagnostics servers.</p>
+              <div class="project-stats-mini">
+                <div><strong>400 kVA</strong>Pure Sine Wave</div>
+                <div><strong>0 Sec</strong>Cutover Downtime</div>
+                <div><strong>24/7</strong>SLA Maintenance</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 5 -->
+          <article class="project-card reveal visible delay4" data-category="enterprise">
+            <div style="position:relative;">
+              <img class="project-card-img" src="assets/images/fire-suppression.jpg"
+                alt="Logistics Enterprise Facility">
+              <span class="project-badge">Enterprise</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Logistics HQ Server Facility Modernization</h3>
+              <p>High-density rack containment installation with in-row direct expansion cooling and automated
+                environmental monitoring software.</p>
+              <div class="project-stats-mini">
+                <div><strong>30%</strong>Energy Savings</div>
+                <div><strong>24 Racks</strong>High Density</div>
+                <div><strong>N+1</strong>Cooling Loop</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study 6 -->
+          <article class="project-card reveal visible" data-category="financial">
+            <div style="position:relative;">
+              <img class="project-card-img" src="assets/images/security-systems.jpg" alt="Fintech Payment Host Center">
+              <span class="project-badge">Financial</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Fintech Payment Gateway Primary Host</h3>
+              <p>PCI-DSS compliant secure server room implementation featuring mantrap biometric access control and
+                redundant fiber optic connections.</p>
+              <div class="project-stats-mini">
+                <div><strong>PCI-DSS</strong>Compliant Site</div>
+                <div><strong>200 kW</strong>Modular Power</div>
+                <div><strong>Multi-Factor</strong>Biometrics</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials & Impact -->
+    <section class="py-section" style="background:#fff;">
+      <div class="container">
+        <h2 class="title">Trusted by Tanzania's Industry Leaders</h2>
+        <p class="subtitle">What our engineering partners say about our turn-key execution and support responsiveness.
+        </p>
+
+        <div class="grid-2" style="margin-top:36px;">
+          <div style="background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:30px;">
+            <p style="font-size:0.95rem; font-style:italic; line-height:1.6; color:var(--navy); margin-0 0 16px;">
+              "Kenmark Solutions delivered our 1.2MW data center expansion ahead of schedule with zero disruption to
+              active core banking systems. Their local engineering team in Dar es Salaam is top tier."
+            </p>
+            <div>
+              <strong style="color:var(--navy); font-size:0.9rem; display:block;">Chief Technology Officer</strong>
+              <span style="color:var(--muted); font-size:0.8rem;">Leading Tanzanian Commercial Bank</span>
+            </div>
+          </div>
+
+          <div style="background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:30px;">
+            <p style="font-size:0.95rem; font-style:italic; line-height:1.6; color:var(--navy); margin-0 0 16px;">
+              "Operating edge POP nodes across regional Tanzania requires reliable power and cooling. Kenmark Solutions'
+              24/7 SLA maintenance gives us total peace of mind for our network."
+            </p>
+            <div>
+              <strong style="color:var(--navy); font-size:0.9rem; display:block;">Head of Network
+                Infrastructure</strong>
+              <span style="color:var(--muted); font-size:0.8rem;">National Telecommunications Operator</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:40px;">
+          <a href="contact.html" class="btn btn-primary">Start Your Infrastructure Project →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo.svg" alt="Kenmark Solutions Ltd">
+          <p>Powering Tanzania.<br>Securing Tomorrow.</p>
+        </div>
+        <div>
+          <h4>Solutions</h4>
+          <a href="solutions.html">Power Systems</a>
+          <a href="solutions.html">Cooling Systems</a>
+          <a href="solutions.html">IT Infrastructure</a>
+          <a href="solutions.html">Monitoring & DCIM</a>
+          <a href="solutions.html">Fire Protection</a>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="services.html">Design</a>
+          <a href="services.html">Supply</a>
+          <a href="services.html">Installation</a>
+          <a href="services.html">Commissioning</a>
+          <a href="services.html">Maintenance</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Our Approach</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html#partners">Partners</a>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>+255 123 456 789<br>info@kandiyar.com<br>Dar es Salaam, Tanzania</p>
+          <a class="btn btn-primary" href="contact.html">Get In Touch →</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2026 Kenmark Solutions Ltd. All rights reserved.</span>
+        <span>Privacy Policy · Terms of Use</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
