@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="280" height="34" viewBox="0 0 280 34">
-<rect width="280" height="34" fill="#031a33"/>
 <g fill="none" stroke-width="3">
-<path d="M0 17 17 0l17 17-17 17zM34 17 51 0l17 17-17 17zM68 17 85 0l17 17-17 17zM102 17 119 0l17 17-17 17zM136 17 153 0l17 17-17 17zM170 17 187 0l17 17-17 17zM204 17 221 0l17 17-17 17zM238 17 255 0l17 17-17 17z" stroke="#21b45b"/>
-<path d="M8 17h18M42 17h18M76 17h18M110 17h18M144 17h18M178 17h18M212 17h18M246 17h18" stroke="#fcd116"/>
-<circle cx="17" cy="17" r="4" fill="#0879d1" stroke="none"/><circle cx="51" cy="17" r="4" fill="#0879d1" stroke="none"/>
-<circle cx="85" cy="17" r="4" fill="#0879d1" stroke="none"/><circle cx="119" cy="17" r="4" fill="#0879d1" stroke="none"/>
-<circle cx="153" cy="17" r="4" fill="#0879d1" stroke="none"/><circle cx="187" cy="17" r="4" fill="#0879d1" stroke="none"/>
-<circle cx="221" cy="17" r="4" fill="#0879d1" stroke="none"/><circle cx="255" cy="17" r="4" fill="#0879d1" stroke="none"/>
+<path d="M0 17 17 0l17 17-17 17zM34 17 51 0l17 17-17 17zM68 17 85 0l17 17-17 17zM102 17 119 0l17 17-17 17zM136 17 153 0l17 17-17 17zM170 17 187 0l17 17-17 17zM204 17 221 0l17 17-17 17zM238 17 255 0l17 17-17 17z" stroke="#00d2ff"/>
+<path d="M8 17h18M42 17h18M76 17h18M110 17h18M144 17h18M178 17h18M212 17h18M246 17h18" stroke="#0066ff"/>
+<circle cx="17" cy="17" r="4" fill="#00d2ff" stroke="none"/><circle cx="51" cy="17" r="4" fill="#00d2ff" stroke="none"/>
+<circle cx="85" cy="17" r="4" fill="#00d2ff" stroke="none"/><circle cx="119" cy="17" r="4" fill="#00d2ff" stroke="none"/>
+<circle cx="153" cy="17" r="4" fill="#00d2ff" stroke="none"/><circle cx="187" cy="17" r="4" fill="#00d2ff" stroke="none"/>
+<circle cx="221" cy="17" r="4" fill="#00d2ff" stroke="none"/><circle cx="255" cy="17" r="4" fill="#00d2ff" stroke="none"/>
 </g></svg>
