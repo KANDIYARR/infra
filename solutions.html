@@ -26,7 +26,7 @@
         <a href="services.html">Services</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About Us</a>
-        <a href="insights.html">Insights</a>
+        
       </nav>
       <div class="nav-actions">
         <a class="btn btn-primary" href="contact.html">Contact Us →</a>
@@ -68,45 +68,159 @@
     <!-- Tabbed Expertise Categories -->
     <section class="py-section bg-light">
       <div class="container tabs-container">
-        <div class="filter-bar">
-          <button class="filter-btn active tab-btn" data-tab="ups-tab">⚡ UPS Systems & Critical Power</button>
-          <button class="filter-btn tab-btn" data-tab="cooling-tab">❄️ Precision Cooling Systems</button>
-          <button class="filter-btn tab-btn" data-tab="generator-tab">🔌 Diesel Generator Systems</button>
-          <button class="filter-btn tab-btn" data-tab="leak-tab">💧 Water Leak Detection</button>
-          <button class="filter-btn tab-btn" data-tab="monitoring-tab">📊 Environmental Monitoring</button>
+        <!-- Solutions Cards Grid -->
+        <div class="solution-tabs" role="tablist">
+          <button class="tab-btn active" data-tab="ups" id="tab-ups" role="tab" aria-controls="ups">UPS Systems</button>
+          <button class="tab-btn" data-tab="cooling" id="tab-cooling" role="tab" aria-controls="cooling">Precision
+            Cooling</button>
+          <button class="tab-btn" data-tab="generator" id="tab-generator" role="tab" aria-controls="generator">Diesel
+            Generators</button>
+          <button class="tab-btn" data-tab="leak" id="tab-leak" role="tab" aria-controls="leak">Water Leak
+            Detection</button>
+          <button class="tab-btn" data-tab="monitoring" id="tab-monitoring" role="tab"
+            aria-controls="monitoring">Environmental Monitoring</button>
         </div>
-
-        <!-- 1. UPS Systems & Critical Power -->
-        <div class="tab-content active" id="ups-tab">
-          <div class="solution-detail-card reveal visible">
-            <h3><img src="assets/icons/power.svg" alt=""> UPS Systems & Critical Power Solutions</h3>
-            <p style="color:var(--muted); font-size:0.9rem; line-height:1.65;">
-              Kenmark specializes in the design, supply, installation, testing, and commissioning of
-              <strong>Uninterruptible Power Supply (UPS) systems</strong> to protect critical loads from power
-              interruptions and electrical disturbances. We ensure continuous and stable power availability for data
-              centers, financial institutions, healthcare facilities, and mission-critical applications.
-            </p>
-            <ul class="solution-features-list" style="margin-top:20px;">
-              <li>UPS system capacity assessment and load calculation</li>
-              <li>Power protection design and system selection</li>
-              <li>UPS installation, commissioning, and performance testing</li>
-              <li>Battery bank supply, replacement, and maintenance</li>
-              <li>Preventive maintenance and troubleshooting</li>
-              <li>Power quality analysis and optimization</li>
-            </ul>
+        <BR>
+        <section id="ups" class="tab-content active" role="tabpanel" aria-labelledby="tab-ups">
+          <div class="solution-split-card">
+            <div class="solution-split-content">
+              <h3><img src="assets/icons/power.svg" alt=""
+                  style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> UPS Systems
+                &amp; Critical Power</h3>
+              <p>Kenmark specializes in the design, supply, installation, testing, and commissioning of
+                <strong>Uninterruptible Power Supply (UPS) systems</strong> to protect critical loads from power
+                interruptions and electrical disturbances. We ensure continuous and stable power availability for data
+                centers, financial institutions, healthcare facilities, and mission-critical applications.
+              </p>
+              <ul class="solution-features-list">
+                <li>UPS system capacity assessment and load calculation</li>
+                <li>Power protection design and system selection</li>
+                <li>UPS installation, commissioning, and performance testing</li>
+                <li>Battery bank supply, replacement, and maintenance</li>
+                <li>Preventive maintenance and troubleshooting</li>
+                <li>Power quality analysis and optimization</li>
+              </ul>
+            </div>
+            <div class="solution-split-visual">
+              <img src="assets/images/power-systems.jpg" alt="">
+            </div>
           </div>
-        </div>
+        </section>
 
-        <!-- 2. Precision Cooling Systems -->
-        <div class="tab-content" id="cooling-tab">
-          <div class="solution-detail-card">
-            <h3><img src="assets/icons/cooling.svg" alt=""> Precision Cooling Systems</h3>
-            <p style="color:var(--muted); font-size:0.9rem; line-height:1.65;">
-              Maintaining the correct temperature and humidity conditions is essential for data center reliability.
+        <section id="cooling" class="tab-content" role="tabpanel" aria-labelledby="tab-cooling">
+          <div class="solution-split-card">
+            <div class="solution-split-content">
+              <h3><img src="assets/icons/cooling.svg" alt=""
+                  style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Precision
+                Cooling Systems</h3>
+              <p>Maintaining the correct temperature and humidity conditions is essential for data center reliability.
+                Kenmark provides advanced <strong>precision cooling solutions</strong> to maintain optimal environmental
+                conditions for sensitive IT equipment, preventing overheating and extending equipment operational life.
+              </p>
+              <ul class="solution-features-list">
+                <li>CRAC / CCU precision air conditioning systems</li>
+                <li>Cooling capacity assessment and system selection</li>
+                <li>Server room cooling analysis and hot spot identification</li>
+                <li>Airflow management and cooling optimization</li>
+                <li>Installation, commissioning, and servicing</li>
+                <li>Preventive maintenance and energy efficiency improvement</li>
+              </ul>
+            </div>
+            <div class="solution-split-visual">
+              <div><img src="assets/images/cooling-systems.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="generator" class="tab-content" role="tabpanel" aria-labelledby="tab-generator">
+          <div class="solution-split-card">
+            <div class="solution-split-content">
+              <h3><img src="assets/icons/power.svg" alt=""
+                  style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Diesel
+                Generator Systems</h3>
+              <p>Kenmark delivers dependable backup power solutions to ensure business continuity during utility power
+                failures. We help organizations maintain uninterrupted operations with reliable standby power solutions.
+              </p>
+              <ul class="solution-features-list">
+                <li>Generator capacity assessment and load calculation</li>
+                <li>Supply, installation, and commissioning support</li>
+                <li>Synchronization and integration with critical power systems</li>
+                <li>Preventive maintenance and performance testing</li>
+                <li>Fuel system and operational reliability checks</li>
+                <li>Automatic transfer switch (ATS) integration</li>
+              </ul>
+            </div>
+            <div class="solution-split-visual">
+              <div><img src="assets/images/it-infrastructure.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="leak" class="tab-content" role="tabpanel" aria-labelledby="tab-leak">
+          <div class="solution-split-card">
+            <div class="solution-split-content">
+              <h3><img src="assets/icons/security.svg" alt=""
+                  style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Water Leak
+                Detection Systems</h3>
+              <p>Water leakage can create significant risks in data centers and critical facilities. Kenmark provides
+                intelligent <strong>water leak detection solutions</strong> designed to identify and prevent potential
+                damage to minimize downtime and protect infrastructure assets.</p>
+              <ul class="solution-features-list">
+                <li>Leak detection cable and sensor installation</li>
+                <li>Monitoring system integration</li>
+                <li>Early warning alerts and alarm configuration</li>
+                <li>Protection for raised floors, cooling systems, and critical areas</li>
+                <li>Zone-based &amp; addressable leak locating</li>
+                <li>Automated shut-off valve integration</li>
+              </ul>
+            </div>
+            <div class="solution-split-visual">
+              <div><img src="assets/images/security-systems.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="monitoring" class="tab-content" role="tabpanel" aria-labelledby="tab-monitoring">
+          <div class="solution-split-card">
+            <div class="solution-split-content">
+              <h3><img src="assets/icons/monitoring.svg" alt=""
+                  style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Environmental
+                Monitoring</h3>
+              <p>Kenmark provides advanced environmental monitoring solutions to maintain visibility and control over
+                critical data center conditions. By providing real-time visibility, we help customers identify potential
+                risks, improve efficiency, and maintain a highly reliable operating environment.</p>
+              <ul class="solution-features-list">
+                <li>Temperature and humidity monitoring</li>
+                <li>Rack-level environmental monitoring</li>
+                <li>Power and energy monitoring</li>
+                <li>Alarm management and notification systems</li>
+                <li>Integration with BMS / DCIM platforms</li>
+                <li>Real-time telemetry &amp; historical audit reporting</li>
+              </ul>
+            </div>
+            <div class="solution-split-visual">
+              <div><img src="assets/images/dcim-monitoring.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <BR><BR><BR>
+      </div>
+
+      </div>
+      </div>
+
+      <!-- Precision Cooling Systems -->
+      <!-- <div class="solution-card reveal visible delay1">
+        <div class="solution-split-card">
+          <div class="solution-split-content">
+            <h3><img src="assets/icons/cooling.svg" alt=""
+                style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Precision
+              Cooling Systems</h3>
+            <p>Maintaining the correct temperature and humidity conditions is essential for data center reliability.
               Kenmark provides advanced <strong>precision cooling solutions</strong> to maintain optimal environmental
               conditions for sensitive IT equipment, preventing overheating and extending equipment operational life.
             </p>
-            <ul class="solution-features-list" style="margin-top:20px;">
+            <ul class="solution-features-list">
               <li>CRAC / CCU precision air conditioning systems</li>
               <li>Cooling capacity assessment and system selection</li>
               <li>Server room cooling analysis and hot spot identification</li>
@@ -115,17 +229,23 @@
               <li>Preventive maintenance and energy efficiency improvement</li>
             </ul>
           </div>
+          <div class="solution-split-visual">
+            <div class="visual-icon"><img src="assets/icons/cooling.svg" alt=""></div>
+          </div>
         </div>
+      </div> -->
 
-        <!-- 3. Diesel Generator Systems -->
-        <div class="tab-content" id="generator-tab">
-          <div class="solution-detail-card">
-            <h3><img src="assets/icons/power.svg" alt=""> Diesel Generator Systems</h3>
-            <p style="color:var(--muted); font-size:0.9rem; line-height:1.65;">
-              Kenmark delivers dependable backup power solutions to ensure business continuity during utility power
+      <!-- Diesel Generator Systems -->
+      <!--  <div class="solution-card reveal visible delay2">
+        <div class="solution-split-card">
+          <div class="solution-split-content">
+            <h3><img src="assets/icons/power.svg" alt=""
+                style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Diesel
+              Generator Systems</h3>
+            <p>Kenmark delivers dependable backup power solutions to ensure business continuity during utility power
               failures. We help organizations maintain uninterrupted operations with reliable standby power solutions.
             </p>
-            <ul class="solution-features-list" style="margin-top:20px;">
+            <ul class="solution-features-list">
               <li>Generator capacity assessment and load calculation</li>
               <li>Supply, installation, and commissioning support</li>
               <li>Synchronization and integration with critical power systems</li>
@@ -134,18 +254,23 @@
               <li>Automatic transfer switch (ATS) integration</li>
             </ul>
           </div>
+          <div class="solution-split-visual">
+            <div class="visual-icon"><img src="assets/icons/power.svg" alt=""></div>
+          </div>
         </div>
+      </div> -->
 
-        <!-- 4. Water Leak Detection Systems -->
-        <div class="tab-content" id="leak-tab">
-          <div class="solution-detail-card">
-            <h3><img src="assets/icons/security.svg" alt=""> Water Leak Detection Systems</h3>
-            <p style="color:var(--muted); font-size:0.9rem; line-height:1.65;">
-              Water leakage can create significant risks in data centers and critical facilities. Kenmark provides
+      <!-- Water Leak Detection Systems -->
+      <!-- <div class="solution-card reveal visible delay3">
+        <div class="solution-split-card">
+          <div class="solution-split-content">
+            <h3><img src="assets/icons/security.svg" alt=""
+                style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Water Leak
+              Detection Systems</h3>
+            <p>Water leakage can create significant risks in data centers and critical facilities. Kenmark provides
               intelligent <strong>water leak detection solutions</strong> designed to identify and prevent potential
-              damage to minimize downtime and protect infrastructure assets.
-            </p>
-            <ul class="solution-features-list" style="margin-top:20px;">
+              damage to minimize downtime and protect infrastructure assets.</p>
+            <ul class="solution-features-list">
               <li>Leak detection cable and sensor installation</li>
               <li>Monitoring system integration</li>
               <li>Early warning alerts and alarm configuration</li>
@@ -154,18 +279,23 @@
               <li>Automated shut-off valve integration</li>
             </ul>
           </div>
+          <div class="solution-split-visual">
+            <div class="visual-icon"><img src="assets/icons/security.svg" alt=""></div>
+          </div>
         </div>
+      </div> -->
 
-        <!-- 5. Data Center Environmental Monitoring Systems -->
-        <div class="tab-content" id="monitoring-tab">
-          <div class="solution-detail-card">
-            <h3><img src="assets/icons/monitoring.svg" alt=""> Data Center Environmental Monitoring Systems</h3>
-            <p style="color:var(--muted); font-size:0.9rem; line-height:1.65;">
-              Kenmark provides advanced environmental monitoring solutions to maintain visibility and control over
+      <!-- Environmental Monitoring -->
+      <!--       <div class="solution-card reveal visible delay4">
+        <div class="solution-split-card">
+          <div class="solution-split-content">
+            <h3><img src="assets/icons/monitoring.svg" alt=""
+                style="width:36px;height:36px;background:var(--surface);padding:6px;border-radius:50%;"> Environmental
+              Monitoring</h3>
+            <p>Kenmark provides advanced environmental monitoring solutions to maintain visibility and control over
               critical data center conditions. By providing real-time visibility, we help customers identify potential
-              risks, improve efficiency, and maintain a highly reliable operating environment.
-            </p>
-            <ul class="solution-features-list" style="margin-top:20px;">
+              risks, improve efficiency, and maintain a highly reliable operating environment.</p>
+            <ul class="solution-features-list">
               <li>Temperature and humidity monitoring</li>
               <li>Rack-level environmental monitoring</li>
               <li>Power and energy monitoring</li>
@@ -174,7 +304,12 @@
               <li>Real-time telemetry & historical audit reporting</li>
             </ul>
           </div>
+          <div class="solution-split-visual">
+            <div class="visual-icon"><img src="assets/icons/monitoring.svg" alt=""></div>
+          </div>
         </div>
+      </div> -->
+      </div>
 
       </div>
     </section>
@@ -182,18 +317,19 @@
     <!-- Technical Spec Table Section -->
     <section class="py-section" style="background:#fff;">
       <div class="container">
-        <h2 class="title">Solution Specifications Matrix</h2>
-        <p class="subtitle">Architectural comparison across deployment scales tailored for critical environments in
+        <h2 class="title reveal visible">Solution Specifications Matrix</h2>
+        <p class="subtitle reveal visible delay1">Architectural comparison across deployment scales tailored for
+          critical environments in
           Africa & Middle East.</p>
 
-        <div class="spec-table-wrapper">
-          <table class="spec-table">
+        <div class="spec-table-wrapper reveal visible delay2">
+          <table class="premium-spec-table">
             <thead>
               <tr>
                 <th>Specification</th>
                 <th>Edge / Telecom POP</th>
                 <th>Enterprise Facility</th>
-                <th>Data Center / Hyperscale</th>
+                <th class="recommended">Data Center / Hyperscale</th>
               </tr>
             </thead>
             <tbody>
@@ -201,38 +337,43 @@
                 <td><strong>UPS Capacity</strong></td>
                 <td>3kVA to 20kVA</td>
                 <td>30kVA to 200kVA</td>
-                <td>200kVA to 1.2MW+</td>
+                <td class="recommended-col">200kVA to 1.2MW+</td>
               </tr>
               <tr>
                 <td><strong>Cooling System</strong></td>
                 <td>In-Row / Wall Mounted CCU</td>
                 <td>Precision CRAC / CRAH</td>
-                <td>Multi-Zone Chilled Water Loop</td>
+                <td class="recommended-col">Multi-Zone Chilled Water Loop</td>
               </tr>
               <tr>
                 <td><strong>Backup Power</strong></td>
                 <td>Standby Genset + ATS</td>
                 <td>Dual Synchronized Gensets</td>
-                <td>2N Redundant Power Grid + Gensets</td>
+                <td class="recommended-col">2N Redundant Power Grid + Gensets</td>
               </tr>
               <tr>
                 <td><strong>Water Leak Sensing</strong></td>
                 <td>Point Spot Leak Sensors</td>
                 <td>Zoned Sensor Cable Network</td>
-                <td>Addressable Cable + Auto Valve Cutoff</td>
+                <td class="recommended-col">Addressable Cable + Auto Valve Cutoff</td>
               </tr>
               <tr>
                 <td><strong>Environmental Telemetry</strong></td>
                 <td>Temp / Humidity Pods</td>
                 <td>Rack-Level Multi-Sensors</td>
-                <td>Full Enterprise BMS / DCIM 3D Twin</td>
+                <td class="recommended-col">Full Enterprise BMS / DCIM 3D Twin</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div style="text-align:center; margin-top:30px;">
-          <a href="contact.html" class="btn btn-primary">Request Customized Infrastructure Solution →</a>
+        <div class="cta-banner reveal visible delay3">
+          <h2>Ready to Upgrade Your Infrastructure?</h2>
+          <p>Contact our engineering experts today to discuss a customized solution tailored for your mission-critical
+            facility.</p>
+          <a href="contact.html" class="btn btn-outline"
+            style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.4);">Request Technical Quote
+            →</a>
         </div>
       </div>
     </section>
